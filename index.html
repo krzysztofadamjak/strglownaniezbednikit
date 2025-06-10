@@ -12,12 +12,14 @@
       --text-color: #1a2b4c;
       --border-color: #1a2b4c;
     }
+
     body.dark {
       --bg-color: #1a1a2e;
       --tile-color: #2e2e48;
       --text-color: #ffffff;
       --border-color: #3e3e60;
     }
+
     body {
       margin: 0;
       padding: 2rem;
@@ -25,12 +27,14 @@
       font-family: Arial, sans-serif;
       transition: background-color 0.3s, color 0.3s;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 1.5rem;
       color: var(--text-color);
       font-size: 2rem;
     }
+
     .controls {
       display: flex;
       justify-content: center;
@@ -38,6 +42,7 @@
       margin-bottom: 1.5rem;
       flex-wrap: wrap;
     }
+
     #searchInput {
       padding: 0.5rem 1rem;
       font-size: 1rem;
@@ -46,6 +51,7 @@
       background: var(--tile-color);
       color: var(--text-color);
     }
+
     .toggle-dark {
       padding: 0.5rem 1rem;
       font-size: 1rem;
@@ -56,6 +62,7 @@
       border-radius: 5px;
       transition: background 0.3s;
     }
+
     .masonry {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -63,6 +70,7 @@
       gap: 0.8rem;
       grid-auto-flow: dense;
     }
+
     .tile {
       background: var(--tile-color);
       border: 2px solid var(--border-color);
@@ -78,17 +86,21 @@
       padding: 0.5rem;
       transition: transform 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
     }
+
     .tile i {
       font-size: 1.5rem;
       margin-bottom: 0.3rem;
     }
+
     .tile:hover {
       box-shadow: 0 4px 15px rgba(26, 43, 76, 0.3);
       transform: translateY(-3px);
     }
+
     .wide { grid-column: span 2; }
     .tall { grid-row: span 2; }
     .big  { grid-column: span 2; grid-row: span 2; }
+
     @media(max-width: 500px) {
       .controls {
         flex-direction: column;
@@ -107,22 +119,22 @@
 </div>
 
 <div class="masonry" id="tilesContainer">
-  <a href="https://www.niezbednikit.pl/start/walidator-sql-json" class="tile wide" target="_top"><i class="fas fa-code"></i>Walidator SQL JSON</a>
-  <a href="https://www.niezbednikit.pl/start/database-help" class="tile" target="_top"><i class="fas fa-database"></i>Database Help</a>
-  <a href="https://www.niezbednikit.pl/start/kalkulator-dojazdu-do-pracy" class="tile tall" target="_top"><i class="fas fa-car"></i>Kalkulator dojazdu</a>
-  <a href="https://www.niezbednikit.pl/start/obecno%C5%9Bci" class="tile" target="_top"><i class="fas fa-user-check"></i>Obecności</a>
-  <a href="https://www.niezbednikit.pl/start/kalkulator-nadgodzin" class="tile" target="_top"><i class="fas fa-clock"></i>Nadgodziny</a>
-  <a href="https://www.niezbednikit.pl/start/kalkulator-wynagrodze%C5%84" class="tile wide" target="_top"><i class="fas fa-money-bill-wave"></i>Wynagrodzenia</a>
-  <a href="https://www.niezbednikit.pl/start/chmod-kalkulator" class="tile" target="_top"><i class="fas fa-lock"></i>chmod Kalkulator</a>
-  <a href="https://www.niezbednikit.pl/start/linux-help" class="tile big" target="_top"><i class="fab fa-linux"></i>Linux Help</a>
-  <a href="https://www.niezbednikit.pl/start/generator-hase%C5%82" class="tile" target="_top"><i class="fas fa-key"></i>Generator haseł</a>
-  <a href="https://www.niezbednikit.pl/start/kalkulator-cal-mcdonalds" class="tile tall" target="_top"><i class="fas fa-burger"></i>McDonald's kcal</a>
-  <a href="https://www.niezbednikit.pl/start/konwertery-binarny-decymalny-base64-hash-md5sha-256" class="tile" target="_top"><i class="fas fa-exchange-alt"></i>Konwertery</a>
-  <a href="https://www.niezbednikit.pl/start/qr-generator" class="tile" target="_top"><i class="fas fa-qrcode"></i>QR Generator</a>
-  <a href="https://www.niezbednikit.pl/start/dekoder-peselnipregon" class="tile wide" target="_top"><i class="fas fa-id-card"></i>Dekoder PESEL/NIP</a>
-  <a href="https://www.niezbednikit.pl/start/ping-traceroute-online" class="tile" target="_top"><i class="fas fa-network-wired"></i>Ping / Traceroute</a>
-  <a href="https://www.niezbednikit.pl/start/niezb%C4%99dne-programy" class="tile" target="_top"><i class="fas fa-toolbox"></i>Niezbędne programy</a>
-  <a href="https://www.niezbednikit.pl/start/d%C5%82ugi-weekend" class="tile tall" target="_top"><i class="fas fa-calendar-alt"></i>Długi weekend</a>
+  <a href="https://www.niezbednikit.pl/start/walidator-sql-json" class="tile wide" target="_blank"><i class="fas fa-code"></i>Walidator SQL JSON</a>
+  <a href="https://www.niezbednikit.pl/start/database-help" class="tile" target="_blank"><i class="fas fa-database"></i>Database Help</a>
+  <a href="https://www.niezbednikit.pl/start/kalkulator-dojazdu-do-pracy" class="tile tall" target="_blank"><i class="fas fa-car"></i>Kalkulator dojazdu</a>
+  <a href="https://www.niezbednikit.pl/start/obecno%C5%9Bci" class="tile" target="_blank"><i class="fas fa-user-check"></i>Obecności</a>
+  <a href="https://www.niezbednikit.pl/start/kalkulator-nadgodzin" class="tile" target="_blank"><i class="fas fa-clock"></i>Nadgodziny</a>
+  <a href="https://www.niezbednikit.pl/start/kalkulator-wynagrodze%C5%84" class="tile wide" target="_blank"><i class="fas fa-money-bill-wave"></i>Wynagrodzenia</a>
+  <a href="https://www.niezbednikit.pl/start/chmod-kalkulator" class="tile" target="_blank"><i class="fas fa-lock"></i>chmod Kalkulator</a>
+  <a href="https://www.niezbednikit.pl/start/linux-help" class="tile big" target="_blank"><i class="fab fa-linux"></i>Linux Help</a>
+  <a href="https://www.niezbednikit.pl/start/generator-hase%C5%82" class="tile" target="_blank"><i class="fas fa-key"></i>Generator haseł</a>
+  <a href="https://www.niezbednikit.pl/start/kalkulator-cal-mcdonalds" class="tile tall" target="_blank"><i class="fas fa-burger"></i>McDonald's kcal</a>
+  <a href="https://www.niezbednikit.pl/start/konwertery-binarny-decymalny-base64-hash-md5sha-256" class="tile" target="_blank"><i class="fas fa-exchange-alt"></i>Konwertery</a>
+  <a href="https://www.niezbednikit.pl/start/qr-generator" class="tile" target="_blank"><i class="fas fa-qrcode"></i>QR Generator</a>
+  <a href="https://www.niezbednikit.pl/start/dekoder-peselnipregon" class="tile wide" target="_blank"><i class="fas fa-id-card"></i>Dekoder PESEL/NIP</a>
+  <a href="https://www.niezbednikit.pl/start/ping-traceroute-online" class="tile" target="_blank"><i class="fas fa-network-wired"></i>Ping / Traceroute</a>
+  <a href="https://www.niezbednikit.pl/start/niezb%C4%99dne-programy" class="tile" target="_blank"><i class="fas fa-toolbox"></i>Niezbędne programy</a>
+  <a href="https://www.niezbednikit.pl/start/d%C5%82ugi-weekend" class="tile tall" target="_blank"><i class="fas fa-calendar-alt"></i>Długi weekend</a>
 </div>
 
 <script>
